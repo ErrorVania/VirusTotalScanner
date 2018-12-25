@@ -23,26 +23,7 @@ URL_getIPscan     = 'http://www.virustotal.com/vtapi/v2/ip-address/report'
 
 
 apikey = raw_input('API KEY: ')
-
-
-if apikey == 'd':
-    apikey = 'c876f0a902c7e079b3387de2d9aeb90c55478f16b81fe782be502dbd9a5118e9'
-
-
 input_str = raw_input('SCAN FILE OR URL? [F/U]: ')
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 headers = {'Accept-Encoding': 'gzip, deflate', 'User-Agent': 'gzip,  My Python requests library example client or username'}
 if input_str == 'F':
@@ -81,15 +62,6 @@ if input_str == 'F':
             print 'An Error has occured, this is either the result of the recieved JSON not containing the "scans" parameter, or that the File is safe.'
 
 # ------------------------------URL SCAN------------------------------
-
-
-
-
-
-
-
-
-
 
 if input_str == 'U':
     params = {'apikey': apikey, 'url': raw_input('URL: ')}
